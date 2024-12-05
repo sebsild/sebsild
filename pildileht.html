@@ -5,7 +5,7 @@
         <script>
             function vajutus(){
              vastus.innerText=valik1.value;
-                let aadress="https://script.google.com/a/macros/tlu.ee/s/AKfycbzo260ANCh0LzF8aSJkbbhLROnmioz1yb-qS5tslZCVEW3mVWpjXQSnP9PgT2Xn4yrn/exec"
+                let aadress="https://script.google.com/a/macros/tlu.ee/s/AKfycbzo260ANCh0LzF8aSJkbbhLROnmioz1yb-qS5tslZCVEW3mVWpjXQSnP9PgT2Xn4yrn/exec"+valik1.value;
                 fetch(aadress).then(d => d.text()).then(function(t){vastus.innerText=t})
             }
         </script>

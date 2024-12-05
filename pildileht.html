@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pildi leht</title>
+        <script>
+            function vajutus(){
+             vastus.innerText=valik1.value;
+                let aadress="https://script.google.com/a/macros/tlu.ee/s/AKfycbzo260ANCh0LzF8aSJkbbhLROnmioz1yb-qS5tslZCVEW3mVWpjXQSnP9PgT2Xn4yrn/exec"
+                fetch(aadress).then(d => d.text()).then(function(t){vastus.innerText=t})
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Pildi uudistamise leht</h1>
+        <img src="DDD.png" /><br />
+        <select id="valik1">
+            <option> Pohjendatav</option>
+            <option> pohjendamatu</option>
+            <option> ambivalianss</option>
+        </select>
+        <input type="button" onclick="vajutus()" value="saada" />
+        <div id="vastus">Vastuse koht</div>
+    </body>
+</html>
